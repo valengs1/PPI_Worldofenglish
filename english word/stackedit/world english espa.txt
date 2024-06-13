@@ -1,0 +1,37 @@
+# WOLD OF ENGLISH
+IMPLEMENTACIÓN DE UNA PAGINA WEB DEDICADA AL ÁREA DE INGLÉS, PARA LOS NIÑOS DE SEGUNDO GRADO DE LA INSTITUCIÓN EDUCATIVA LAS NIEVES PARA FOMENTAR Y FORTALECER EL APRENDIZAJE DE LA LENGUA EXTRANJERA
+
+##  DESCRIPCIÓN
+El proyecto tiene como objetivo el desarrollo de una página web educativa destinada a la enseñanza del inglés a niños a través de entornos interactivos. Las actividades propuestas incluirán resolución de problemas, juegos de descubrimiento y personajes animados diseñados para captar la atención y el interés de los infantes.
+
+## OBJETIVOS ESPECIFICOS 
+**Objetivos Específicos:**  
+
+-   **Mejora del Vocabulario en Inglés:** A través de una variedad de actividades prácticas y contextualizadas, se pretende enriquecer el vocabulario de los niños, proporcionándoles las herramientas lingüísticas necesarias para comunicarse de manera efectiva en inglés.  
+    
+-   **Fomento de la Comprensión Auditiva y Lectora:** Se utilizarán recursos audiovisuales especialmente diseñados para la edad de los niños, con el objetivo de fortalecer su comprensión auditiva y lectora del idioma inglés. Esto les permitirá familiarizarse con distintos acentos y entonaciones, así como desarrollar su capacidad para comprender textos escritos.  
+    
+-   **Desarrollo de Habilidades Comunicativas:** A través de la práctica regular de la conversación y la interacción en línea, se busca potenciar las habilidades comunicativas de los niños en inglés. Mediante actividades interactivas y dinámicas, se les brindará la oportunidad de expresarse oralmente, interactuar con sus pares y ganar confianza en el uso del idioma.
+
+## OBJETIVOS GENERALES 
+-   **Facilitación del Aprendizaje del Inglés:** La plataforma web "World of English" tiene como objetivo principal facilitar el aprendizaje del inglés para los niños de segundo grado de manera interactiva y accesible. A través de un enfoque lúdico y personalizado, se busca despertar su interés por el idioma y motivarlos a explorar y experimentar con la lengua de manera activa.  
+    
+-   **Promoción del Desarrollo Académico y Personal:** Al proporcionar a los niños las herramientas necesarias para comunicarse en inglés, se espera promover su desarrollo académico y personal. El dominio del inglés no solo es una habilidad lingüística invaluable, sino también una competencia que abre puertas a oportunidades educativas y profesionales en un mundo globalizado.
+
+##  METODOLOGÍA
+1. **Entorno de Aprendizaje:** Se diseñará una plataforma interactiva que ofrezca a los niños actividades integradas en diversas áreas del conocimiento, tales como ciencias, historia y matemáticas, con el objetivo de reforzar la enseñanza del inglés.  
+2. **Personajes Animados:** Los personajes animados actuarán como guías, proporcionando apoyo y explicaciones detalladas a lo largo de las actividades, facilitando así el proceso de aprendizaje.  
+3. **Actividades de Resolución de Problemas:** Las actividades estarán diseñadas para fomentar habilidades de resolución de problemas, pensamiento crítico y creatividad, elementos esenciales para el desarrollo cognitivo de los niños.  
+4. **Sistema de Interacción:** Se implementará un sistema que permita la interacción entre los niños, promoviendo la colaboración y el aprendizaje social en un entorno seguro y supervisado.
+
+##  IMPACTO ESPERADO
+Se espera que esta plataforma no solo facilite el aprendizaje del inglés, sino que también contribuya al desarrollo integral de los niños, promoviendo habilidades sociales y cognitivas. La combinación de elementos educativos y lúdicos está diseñada para mantener el interés y la motivación de los estudiantes, garantizando así un aprendizaje eficaz y duradero.
+##  CONCLUCIÓN
+En conclusión, el desarrollo de esta página web educativa proporcionará un recurso invaluable para la enseñanza del inglés. Al integrar actividades interactivas y colaborativas, se fomentará un ambiente de aprendizaje positivo, estimulando la curiosidad, la creatividad y las habilidades de resolución de problemas en los niños.
+
+##  PORCENTAJE
+Actualmente, el desarrollo de la página web ha alcanzado el 30% de progreso. Hasta el momento, se ha completado la estructura principal de los juegos, así como las funcionalidades de registro e inicio de sesión. Además, se han implementado diversos botones y otros elementos esenciales para la navegación y el uso del sitio.
+
+##  CICLO DE VIDA 
+Nuestro proyecto se centra en la implementación de una plataforma web destinada a la enseñanza del idioma inglés para niños de segundo grado. El objetivo primordial es fomentar el aprendizaje de una segunda lengua desde temprana edad, así como fortalecer el dominio del idioma extranjero. Los requisitos fundamentales de esta plataforma incluyen la capacidad de inicio de sesión, registro de usuarios, disponibilidad de material didáctico en forma de planillas, juegos interactivos y videos educativos.  
+En cuanto al diseño, se planea desarrollar una interfaz visualmente atractiva y amigable para niños de esta edad. Se utilizarán elementos gráficos como muñecos didácticos, colores llamativos y un diseño intuitivo que facilite la navegación y el compromiso del usuario infantil con el contenido educativo.

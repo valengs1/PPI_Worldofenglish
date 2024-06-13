@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilla de Notas</title>
+    <style>
+        /* Estilos CSS aquí */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Planilla de Notas</h1>
+    </header>
+
+    <div class="container">
+        <table id="notasTable">
+            <thead>
+                <tr>
+                    <th>Asignatura</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Promedio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Matemáticas</td>
+                    <td id="matematicasNota1">0</td>
+                    <td id="matematicasNota2">0</td>
+                    <td id="matematicasNota3">0</td>
+                    <td id="matematicasPromedio">0</td>
+                </tr>
+                <tr>
+                    <td>Ciencias</td>
+                    <td id="cienciasNota1">0</td>
+                    <td id="cienciasNota2">0</td>
+                    <td id="cienciasNota3">0</td>
+                    <td id="cienciasPromedio">0</td>
+                </tr>
+                <tr>
+                    <td>Lenguaje</td>
+                    <td id="lenguajeNota1">0</td>
+                    <td id="lenguajeNota2">0</td>
+                    <td id="lenguajeNota3">0</td>
+                    <td id="lenguajePromedio">0</td>
+                </tr>
+                <tr class="total">
+                    <td>Total</td>
+                    <td id="totalNota1">0</td>
+                    <td id="totalNota2">0</td>
+                    <td id="totalNota3">0</td>
+                    <td id="totalPromedio">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Simulación de función para actualizar las notas
+        function actualizarNotas() {
+            // Aquí podrías realizar cálculos para obtener las notas actualizadas
+            // Por ahora, simplemente se generan números aleatorios como ejemplo
+
+            function generarNota() {
+                return Math.floor(Math.random() * 100) + 1;
+            }
+
+            document.getElementById("matematicasNota1").textContent = generarNota();
+            document.getElementById("matematicasNota2").textContent = generarNota();
+            document.getElementById("matematicasNota3").textContent = generarNota();
+
+            document.getElementById("cienciasNota1").textContent = generarNota();
+            document.getElementById("cienciasNota2").textContent = generarNota();
+            document.getElementById("cienciasNota3").textContent = generarNota();
+
+            document.getElementById("lenguajeNota1").textContent = generarNota();
+            document.getElementById("lenguajeNota2").textContent = generarNota();
+            document.getElementById("lenguajeNota3").textContent = generarNota();
+
+            // Actualizar el promedio
+            actualizarPromedio("matematicas");
+            actualizarPromedio("ciencias");
+            actualizarPromedio("lenguaje");
+
+            // Actualizar total
+            actualizarTotal();
+        }
+
+        // Función para actualizar el promedio de una asignatura
+        function actualizarPromedio(asignatura) {
+            const nota1 = parseInt(document.getElementById(`${asignatura}Nota1`).textContent);
+            const nota2 = parseInt(document.getElementById(`${asignatura}Nota2`).textContent);
+            const nota3 = parseInt(document.getElementById(`${asignatura}Nota3`).textContent);
+
+            const promedio = (nota1 + nota2 + nota3) / 3;
+            document.getElementById(`${asignatura}Promedio`).textContent = promedio.toFixed(2);
+        }
+
+        // Función para actualizar el total de las notas
+        function actualizarTotal() {
+            const totalNota1 = parseInt(document.getElementById("matematicasNota1").textContent) +
+                                parseInt(document.getElementById("cienciasNota1").textContent) +
+                                parseInt(document.getElementById("lenguajeNota1").textContent);
+            const totalNota2 = parseInt(document.getElementById("matematicasNota2").textContent) +
+                                parseInt(document.getElementById("cienciasNota2").textContent) +
+                                parseInt(document.getElementById("lenguajeNota2").textContent);
+            const totalNota3 = parseInt(document.getElementById("matematicasNota3").textContent) +
+                                parseInt(document.getElementById("cienciasNota3").textContent) +
+                                parseInt(document.getElementById("lenguajeNota3").textContent);
+
+            const totalPromedio = (totalNota1 + totalNota2 + totalNota3) / 3;
+            document.getElementById("totalNota1").textContent = totalNota1;
+            document.getElementById("totalNota2").textContent = totalNota2;
+            document.getElementById("totalNota3").textContent = totalNota3;
+            document.getElementById("totalPromedio").textContent = totalPromedio.toFixed(2);
+        }
+
+        // Llamar a la función para actualizar las notas cuando se cargue la página
+        window.onload = function() {
+            actualizarNotas();
+        };
+    </script>
+</body>
+</html>

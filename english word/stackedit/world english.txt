@@ -1,0 +1,37 @@
+#  WOLD OF ENGLISH
+IMPLEMENTATION OF A WEB PAGE DEDICATED TO THE AREA OF ENGLISH, FOR THE SECOND GRADE CHILDREN OF THE LAS NIEVES EDUCATIONAL INSTITUTION TO PROMOTE AND STRENGTHEN THE LEARNING OF THE FOREIGN LANGUAGE
+
+##  DESCRIPTION
+The project aims to develop an educational website aimed at teaching English to children through interactive environments. The proposed activities will include problem solving, discovery games and animated characters designed to capture the attention and interest of children.
+
+## SPECIFIC OBJECTIVES
+**Specific objectives:**
+
+- **Improvement of English Vocabulary:** Through a variety of practical and contextualized activities, the aim is to enrich children's vocabulary, providing them with the linguistic tools necessary to communicate effectively in English.
+
+- **Promotion of Listening and Reading Comprehension:** Audiovisual resources specially designed for the age of the children will be used, with the aim of strengthening their listening and reading comprehension of the English language. This will allow them to become familiar with different accents and intonations, as well as develop their ability to understand written texts.
+
+- **Development of Communication Skills:** Through the regular practice of conversation and online interaction, we seek to enhance children's communication skills in English. Through interactive and dynamic activities, they will be given the opportunity to express themselves orally, interact with their peers and gain confidence in the use of the language.
+
+## GENERAL OBJECTIVES
+- **Facilitation of English Learning:** The "World of English" web platform's main objective is to facilitate the learning of English for second grade children in an interactive and accessible way. Through a playful and personalized approach, we seek to awaken their interest in the language and motivate them to actively explore and experiment with the language.
+
+- **Promotion of Academic and Personal Development:** By providing children with the necessary tools to communicate in English, it is hoped to promote their academic and personal development. Proficiency in English is not only an invaluable language skill, but also a competency that opens doors to educational and professional opportunities in a globalized world.
+
+## METHODOLOGY
+1. **Learning Environment:** An interactive platform will be designed that offers children integrated activities in various areas of knowledge, such as science, history and mathematics, with the aim of reinforcing the teaching of English.
+2. **Animated Characters:** The animated characters will act as guides, providing support and detailed explanations throughout the activities, thus facilitating the learning process.
+3. **Problem Solving Activities:** Activities will be designed to foster problem-solving skills, critical thinking and creativity, essential elements for children's cognitive development.
+4. **Interaction System:** A system will be implemented that allows interaction between children, promoting collaboration and social learning in a safe and supervised environment.
+
+## EXPECTED IMPACT
+It is expected that this platform will not only facilitate the learning of English, but also contribute to the comprehensive development of children, promoting social and cognitive skills. The combination of educational and recreational elements is designed to maintain the interest and motivation of students, thus guaranteeing effective and lasting learning.
+## CONCLUSION
+In conclusion, the development of this educational website will provide an invaluable resource for teaching English. By integrating interactive and collaborative activities, a positive learning environment will be fostered, stimulating curiosity, creativity and problem-solving skills in children.
+
+##  PERCENTAGE
+Currently, the development of the website has reached 30% progress. So far, the main structure of the games has been completed, as well as the registration and login functionalities. In addition, various buttons and other essential elements have been implemented for navigation and use of the site.
+
+##  LIFECYCLE
+Our project focuses on the implementation of a web platform intended for teaching the English language to second grade children. The primary objective is to promote the learning of a second language from an early age, as well as to strengthen mastery of the foreign language. The fundamental requirements of this platform include the ability to log in, user registration, availability of teaching materials in the form of worksheets, interactive games and educational videos.
+Regarding the design, it is planned to develop a visually attractive and friendly interface for children of this age. Graphic elements will be used such as educational dolls, bright colors and an intuitive design that facilitates navigation and engagement of the child user with the educational content.

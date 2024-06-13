@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Palabras - Rompecabezas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #0099ff;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .word-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .letter-box {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #0099ff;
+            margin: 0 5px;
+            font-size: 1.5em;
+            line-height: 50px;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-bottom: 2px solid #0099ff;
+            outline: none;
+            transition: border-bottom-color 0.3s;
+            width: 300px;
+            text-align: center;
+        }
+        input[type="text"]:focus {
+            border-bottom-color: #0077cc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0099ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0077cc;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Juego de Palabras - Rompecabezas</h1>
+        <p>Completa la palabra en inglés:</p>
+    </header>
+
+    <div class="container">
+        <div id="game">
+            <div class="word-container" id="wordContainer"></div>
+            <input type="text" id="userInput" placeholder="Escribe tu respuesta">
+            <button onclick="checkWord()">Comprobar</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script>
+        // Array de palabras en inglés
+        const words = ["apple", "banana", "cat", "dog", "elephant", "flower", "guitar", "house", "ice cream", "jacket", "lion", "moon", "snake", "sun", "tree"];
+
+        // Selecciona una palabra aleatoria del array
+        function getRandomWord() {
+            return words[Math.floor(Math.random() * words.length)];
+        }
+
+        // Desordena las letras de una palabra y devuelve un array
+        function shuffleWord(word) {
+            return word.split('').sort(function(){return 0.5-Math.random()}).join('');
+        }
+
+        // Inicializa el juego
+        function initGame() {
+            const randomWord = getRandomWord();
+            const shuffledWord = shuffleWord(randomWord);
+            const wordContainer = document.getElementById("wordContainer");
+
+            wordContainer.innerHTML = ""; // Limpiar el contenedor de palabras
+
+            // Mostrar las letras desordenadas en cajas
+            for (let i = 0; i < shuffledWord.length; i++) {
+                const letterBox = document.createElement("div");
+                letterBox.className = "letter-box";
+                letterBox.textContent = shuffledWord[i];
+                letterBox.setAttribute("data-letter", shuffledWord[i]);
+                letterBox.addEventListener("click", selectLetter);
+                wordContainer.appendChild(letterBox);
+            }
+
+            // Guardar la palabra original como atributo de datos en el contenedor de palabras
+            wordContainer.setAttribute("data-original-word", randomWord);
+        }
+
+        // Función para seleccionar una letra
+        function selectLetter(event) {
+            const selectedLetter = event.target;
+            const userInput = document.getElementById("userInput");
+            userInput.value += selectedLetter.textContent; // Agregar la letra seleccionada al campo de entrada
+            selectedLetter.classList.add("selected"); // Marcar la letra como seleccionada
+            selectedLetter.removeEventListener("click", selectLetter); // Desactivar el evento click de la letra seleccionada
+        }
+
+        // Función para comprobar la palabra
+        function checkWord() {
+            const userInput = document.getElementById("userInput").value.toLowerCase();
+            const originalWord = document.getElementById("wordContainer").getAttribute("data-original-word").toLowerCase();
+            let result = document.getElementById("result");
+
+            if (userInput === originalWord) {
+                result.textContent = "¡Correcto!";
+                result.className = "correct";
+            } else {
+                result.textContent = "Incorrecto. Intenta de nuevo.";
+                result.className = "incorrect";
+            }
+
+            setTimeout(resetGame, 2000); // Reinicia el juego después de 2 segundos
+        }
+
+        // Función para reiniciar el juego
+        function resetGame() {
+            document.getElementById("userInput").value = ""; // Limpiar el campo de entrada
+            document.getElementById("result").textContent = ""; // Limpiar el resultado
+            initGame(); // Iniciar un nuevo juego
+        }
+
+        // Iniciar el juego al cargar la página
+        window.onload = function() {
+            initGame();
+        };
+    </script>
+</body>
+</html>
